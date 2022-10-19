@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  flask:  
+    build: ./source
+    container_name: backend-flask
+    restart: on-failure
+    # Прокладывам путь для файлов. Все файлы, которые хранятся у вас в 
+    # директории ./tz_dockerpy, появятся в директории контейнера /tz_dockerpy
+    volumes:
+      - ./source:/source
+    # Открываем порт в контейнер
+    # Порт, который будет смотреть наружу : порт который используется внутри контейнера
+    ports:
+      - "5000:5000"
+    command: python3 main.py
