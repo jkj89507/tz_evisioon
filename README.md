@@ -1,4 +1,4 @@
-# tz_evisioon
+# tz_evision
 Данная работа выаолнена в рамках технического задания: https://github.com/eVisionTech/python-homework на должность Python-разработчик
 
 # Сборка
